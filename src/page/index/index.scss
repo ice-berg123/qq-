@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(250,250,250);
+    .nav{
+        top:0;
+        z-index: 999;
+        background-color: rgb(250, 250, 250);
+        position:fixed;
+        width: inherit;
+        box-shadow: 0 3px 25px rgba(0,0,0,.05);
+        .nav_top{
+            padding: 3vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .nav_top_left{
+                display: flex;
+                .logo_background{
+                    vertical-align: middle;
+                    width: 8.5vw;
+                    height: 8.5vw;
+                    vertical-align: center;
+                    background-color: white;
+                    border-radius: 1vw;
+                    .logo{
+                        margin-top: 1vw;
+                        width: 6.5vw;
+                        height: 6.5vw;
+                        margin-left: 1vw;
+                    }
+                }
+                .logo_title{
+                    >div{
+                        margin-left: 2vw;
+                        .logo_title_top{
+                            font-size: 4.4vw;
+                        }
+                        .logo_title_bottom{
+                            font-size: 1vw;
+                            color: rgb(165,165,165);
+                        }
+                    }
+                }
+            }
+            .nav_top_right{
+                margin-right: 1vw;
+                margin-top: 1vw;
+                border: 1px solid rgb(216,216,216);
+                line-height: 5.5vw;
+                height: 5vw;
+                padding: 0.5vw;
+                text-align: center;
+                vertical-align: middle;
+                padding-left: 4vw;
+                padding-right: 4vw;
+                border-radius: 5vw;
+                font-size:3.4vw;
+                color: rgb(153, 145, 145);
+            }
+        }
+        .nav_bottom{
+            margin-top: 1.5vw;
+            display: flex;
+            justify-content: space-around;
+            color: rgb(168,168,168);
+            font-size: 4.2vw;
+            .recommond{
+                color: rgb(34,213,156);
+            }
+            >div{
+                .clock_green{
+
+                    margin-top: 1.9vw;
+                    margin-left: 1vw;
+                    width: 5vw;
+                    height: 0.8vw;
+                    background-color: rgb(34,213,156);
+                }
+            }
+            .charts{
+                .clock_green{
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    .bottom_page{
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        position: relative;
+        .bottom_logo{
+            margin-bottom: 1vh;
+            display: flex;
+            justify-content: center;
+            img{
+                margin-top: 1vw;
+                width: 6.5vw;
+                height: 6.5vw;
+                margin-left: 1vw;
+            }
+            div{
+                margin-top: 0.5vh;
+                margin-left: 2vw;
+                font-weight: 600;
+            }
+        }
+        .intorduction{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 0.5vw;
+            color:rgba(26,26,26,1);
+            font-weight: 100;
+            >div{
+                margin-top: 0.5vh;
+            }
+        }
+    }
+    .bottom_download{
+        z-index:999;
+        position: fixed;
+        bottom: 2vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        >div{
+            background-color: rgb(250,250,250);
+            box-shadow: 0 3px 25px rgba(0,0,0,.05);
+            display: flex;
+            justify-content: center;
+            font-size: 1vw;
+            color: rgb(165,165,165);
+            border-radius: 10vw;
+            padding: 2.5vw;
+            width: 50vw;
+            img{
+                width: 6.5vw;
+                height: 6.5vw;
+            }
+            div{
+
+                margin-left: 2vw;
+                line-height: 6vw;
+            }
+        }
+    }
+    .content_center{
+        margin-top: 18vw;
+        padding-top: 5vw;
+        background-color: #fafafa;
+        .recommend_page{
+            .search{
+                margin-top: 3vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .pubsearch{
+                    width: 90vw;
+                    padding: 1vw;
+                    background-color: white;
+                    border-radius:10vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 2.5vh;
+                        height: 2.5vh;
+                        margin-right: 1vw;
+                    }
+                    div{
+                        color:rgb(134, 133, 133);
+                        font-weight: 100;
+                        font-size: 4vw;
+                    }
+                }
+                .onsearch{
+                    display: none;
+                    >div{
+                        display: flex;
+                    }
+                    margin-right: 4vw;
+                    .pubsearch{
+                        width: 75vw;
+                        margin-right: 2vw;
+                    }
+                    .cancle_search{
+                        margin-left: 2vw;
+                        font-weight: bold;
+                        line-height: 7vw;
+                    }
+                }
+                .searching{
+                    
+                    display: none;
+                    img{
+                        margin-top: 1vw;
+                        margin-left: 1vw;
+                    }
+                    input{
+                        position: relative;
+                        color:rgb(138, 132, 132);
+                        bottom:1vw;
+                        outline: none;
+                        border: none;
+                        font-size: 4vw;
+                    }
+                }
+            }
+            .search_list{
+                display: flex;
+                flex-direction: column;
+                padding: 4vw;
+                .search_item{
+                    margin-bottom: 4vw;
+                    .search_item_title{
+                        font-size: 4.5vw;
+                        margin-bottom: 1vw;
+                    }
+                    .search_item_author{
+                        font-size: 3vw;
+                        color: rgb(201, 200, 200);
+                    }
+                }
+            }
+            .search_page{
+                display: none;
+                padding: 5vw;
+                .hot_search,.history_search{
+                    font-weight: bold;
+                    font-size: 4vw;
+                }
+                .hot_list,.history_list{
+                    margin-top: 2vh;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .hot_item,.history_item{
+                        margin-right: 2vw;
+                        margin-bottom: 1.3vh;
+                        padding: 1vw;
+                        padding-left: 3vw;
+                        padding-right: 3vw;
+                        background-color: white;
+                        border-radius: 10vh;
+                        font-size: 1vw;
+                        color: rgb(134, 131, 131);
+                    }
+                }
+            }
+            .recommend_sheet{
+                .official,.talent{
+                    
+                    margin-bottom: 0vh;
+                    .sheet_top{
+                        padding: 5vw;
+                        display: flex;
+                        justify-content: space-between;
+                        .sheet_title{
+                            font-weight: bold;
+                            font-size: 5vw;
+                        }
+                        .more_sheet{
+                            font-size: 3.5vw;
+                            color: rgb(194, 193, 193);
+                        }
+                    }
+                    .sheet_box{
+                        padding-left: 4vw;
+                        &::-webkit-scrollbar {display:none}
+                        display: flex;
+                        overflow-x: scroll;
+
+                        .sheet_item{
+                            position: relative;
+                            width: 28vw;
+                            margin-right: 2vw;
+                            img{
+                                width: inherit;
+                                height: 28vw;
+                                border-radius: 2vw;
+                            }
+                            .sheet_numbers{
+                                position: absolute;
+                                left: 13vw;
+                                top: 23.2vw;
+                                display: inline-block;
+                                padding: 0.2vw;
+                                padding-left: 3vw;
+                                white-space:nowrap;
+                                padding-right: 3vw;
+                                font-size: 1vw;
+                                color: white;
+                                border-radius: 10vw;
+                                background-color: rgba(0,0,0,0.5);
+                            }
+                            .sheet_tiem_title{
+                                font-size: 3.5vw;
+                                font-weight: 100;
+                                color: rgb(102, 101, 101);
+                                text-align: center;
+                            }
+                        }
+
+                    }
+                }
+                .special{
+                    margin-bottom: 0vh;
+                    .sheet_top{
+                        padding: 5vw;
+                        display: flex;
+                        justify-content: space-between;
+                        .sheet_title{
+                            font-weight: bold;
+                            font-size: 5vw;
+                        }
+                        .more_sheet{
+                            font-size: 3.5vw;
+                            color: rgb(194, 193, 193);
+                        }
+                    }
+                    .sheet_box{
+                        display: flex;
+                        overflow-x: scroll;
+                        margin-left: 3vw;
+                        &::-webkit-scrollbar {display:none}
+                        .sheet_item{
+                            margin-right: 2vw;
+                            width: 60vw;
+                            height: 60vw;
+                            display: flex;
+                            .sheet_mid_box{
+                                width: 60vw;
+                                height: 35vw;
+                                border-radius: 2vw;
+                                background-repeat: no-repeat;
+                                background-size:cover;
+                                background-image: url("../../picture/song.jpg");
+                                display: flex;
+                                text-align: center;
+                                line-height: 9vw;
+                                margin-bottom: 2vw;
+                                >div{
+                                    margin-left: 2vw;
+                                    margin-top:25vw;
+                                }
+                                .sheet_small_picture{
+                                    width: 8vw;
+                                    height: 8vw;
+                                    border-radius: 10vh;
+                                    background-repeat: no-repeat;
+                                    background-size:cover;
+                                    background-image: url("../../picture/song.jpg");
+                                }
+                                .column_name{
+                                    color:white;
+                                    margin-left: 2vw;
+                                    font-size: 4.5vw;
+                                }
+                            }
+                            .sheet_decoration{
+                                font-size: 3.5vw;
+                                font-weight: 100;
+                                color: rgb(102, 101, 101);
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .chart_page{
+            display: none;
+            position: relative;
+            top:0;
+            left:0;
+            .chart_list{
+                position: relative;
+                top:0;
+                transition:height 1s;
+                background-color: white;
+                border-radius: 3vw;
+                display: flex;
+                justify-content: space-between;
+                height: 30vw;
+                margin: 5vw 4vw;
+                .chart_list_left{
+                    padding: 4vw;
+                    width: 54vw;
+                    .chart_title{
+                        font-weight: bold;
+                        font-size: 4.5vw;
+                    }
+                    .chart_item{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: flex;
+                        >div{
+                            margin-top: 1vw;
+                            font-size: 3.3vw;
+                            font-weight: 100;
+                            color: rgb(182, 181, 181);
+                        }
+                        .chart_item_index{
+                            color: black;
+                            font-weight: bold;
+                        }
+                        .song_name{
+                            color: black;
+                        }
+                    }
+                }
+                .chart_list_right{
+                    position: relative;
+                    height: inherit;
+                    width: 30vw;
+                    
+                    overflow: hidden;
+                    img{
+                        width: 30vw;
+                        float: right;
+                        height:inherit;
+                        border-top-right-radius: 2vw;
+                        border-bottom-right-radius: 2vw;
+                    }
+                    .week_update,.numbers{
+                        position: absolute;
+                        color: white;
+                        font-size: 1vw;
+                        background-color: rgba(0, 0, 0,0.5);
+                        padding: 0.5vw;
+                        border-radius: 1vw;
+                        right:1vw;
+                    }
+                    .week_update{
+                        top: 1vw;
+                    }
+                    .numbers{
+                        bottom:0vw;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+.delete1{
+    float: right;
+    display: none;
+}
+.delete2{
+    float: right;
+}
