@@ -2,8 +2,6 @@
 
 var _index = _interopRequireDefault(require("../../module/GetResource/index.js"));
 
-require("./index.scss");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var pervw = document.body.clientWidth / 100;

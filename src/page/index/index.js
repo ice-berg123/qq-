@@ -1,5 +1,5 @@
 import GetResource from "../../module/GetResource/index.js"
-import "./index.scss"
+
 const pervw = document.body.clientWidth / 100
 const pervh = document.body.clientHeight / 100
 const navSort = document.querySelectorAll(".nav_sort")

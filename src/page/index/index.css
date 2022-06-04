@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fafafa; }
+  .content .nav {
+    top: 0;
+    z-index: 999;
+    background-color: #fafafa;
+    position: fixed;
+    width: inherit;
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.05); }
+    .content .nav .nav_top {
+      padding: 3vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .content .nav .nav_top .nav_top_left {
+        display: flex; }
+        .content .nav .nav_top .nav_top_left .logo_background {
+          vertical-align: middle;
+          width: 8.5vw;
+          height: 8.5vw;
+          vertical-align: center;
+          background-color: white;
+          border-radius: 1vw; }
+          .content .nav .nav_top .nav_top_left .logo_background .logo {
+            margin-top: 1vw;
+            width: 6.5vw;
+            height: 6.5vw;
+            margin-left: 1vw; }
+        .content .nav .nav_top .nav_top_left .logo_title > div {
+          margin-left: 2vw; }
+          .content .nav .nav_top .nav_top_left .logo_title > div .logo_title_top {
+            font-size: 4.4vw; }
+          .content .nav .nav_top .nav_top_left .logo_title > div .logo_title_bottom {
+            font-size: 1vw;
+            color: #a5a5a5; }
+      .content .nav .nav_top .nav_top_right {
+        margin-right: 1vw;
+        margin-top: 1vw;
+        border: 1px solid #d8d8d8;
+        line-height: 5.5vw;
+        height: 5vw;
+        padding: 0.5vw;
+        text-align: center;
+        vertical-align: middle;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        border-radius: 5vw;
+        font-size: 3.4vw;
+        color: #999191; }
+    .content .nav .nav_bottom {
+      margin-top: 1.5vw;
+      display: flex;
+      justify-content: space-around;
+      color: #a8a8a8;
+      font-size: 4.2vw; }
+      .content .nav .nav_bottom .recommond {
+        color: #22d59c; }
+      .content .nav .nav_bottom > div .clock_green {
+        margin-top: 1.9vw;
+        margin-left: 1vw;
+        width: 5vw;
+        height: 0.8vw;
+        background-color: #22d59c; }
+      .content .nav .nav_bottom .charts .clock_green {
+        visibility: hidden; }
+  .content .bottom_page {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    position: relative; }
+    .content .bottom_page .bottom_logo {
+      margin-bottom: 1vh;
+      display: flex;
+      justify-content: center; }
+      .content .bottom_page .bottom_logo img {
+        margin-top: 1vw;
+        width: 6.5vw;
+        height: 6.5vw;
+        margin-left: 1vw; }
+      .content .bottom_page .bottom_logo div {
+        margin-top: 0.5vh;
+        margin-left: 2vw;
+        font-weight: 600; }
+    .content .bottom_page .intorduction {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 0.5vw;
+      color: #1a1a1a;
+      font-weight: 100; }
+      .content .bottom_page .intorduction > div {
+        margin-top: 0.5vh; }
+  .content .bottom_download {
+    z-index: 999;
+    position: fixed;
+    bottom: 2vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center; }
+    .content .bottom_download > div {
+      background-color: #fafafa;
+      box-shadow: 0 3px 25px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: center;
+      font-size: 1vw;
+      color: #a5a5a5;
+      border-radius: 10vw;
+      padding: 2.5vw;
+      width: 50vw; }
+      .content .bottom_download > div img {
+        width: 6.5vw;
+        height: 6.5vw; }
+      .content .bottom_download > div div {
+        margin-left: 2vw;
+        line-height: 6vw; }
+  .content .content_center {
+    margin-top: 18vw;
+    padding-top: 5vw;
+    background-color: #fafafa; }
+    .content .content_center .recommend_page .search {
+      margin-top: 3vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .content .content_center .recommend_page .search .pubsearch {
+        width: 90vw;
+        padding: 1vw;
+        background-color: white;
+        border-radius: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .content .content_center .recommend_page .search .pubsearch img {
+          width: 2.5vh;
+          height: 2.5vh;
+          margin-right: 1vw; }
+        .content .content_center .recommend_page .search .pubsearch div {
+          color: #868585;
+          font-weight: 100;
+          font-size: 4vw; }
+      .content .content_center .recommend_page .search .onsearch {
+        display: none;
+        margin-right: 4vw; }
+        .content .content_center .recommend_page .search .onsearch > div {
+          display: flex; }
+        .content .content_center .recommend_page .search .onsearch .pubsearch {
+          width: 75vw;
+          margin-right: 2vw; }
+        .content .content_center .recommend_page .search .onsearch .cancle_search {
+          margin-left: 2vw;
+          font-weight: bold;
+          line-height: 7vw; }
+      .content .content_center .recommend_page .search .searching {
+        display: none; }
+        .content .content_center .recommend_page .search .searching img {
+          margin-top: 1vw;
+          margin-left: 1vw; }
+        .content .content_center .recommend_page .search .searching input {
+          position: relative;
+          color: #8a8484;
+          bottom: 1vw;
+          outline: none;
+          border: none;
+          font-size: 4vw; }
+    .content .content_center .recommend_page .search_list {
+      display: flex;
+      flex-direction: column;
+      padding: 4vw; }
+      .content .content_center .recommend_page .search_list .search_item {
+        margin-bottom: 4vw; }
+        .content .content_center .recommend_page .search_list .search_item .search_item_title {
+          font-size: 4.5vw;
+          margin-bottom: 1vw; }
+        .content .content_center .recommend_page .search_list .search_item .search_item_author {
+          font-size: 3vw;
+          color: #c9c8c8; }
+    .content .content_center .recommend_page .search_page {
+      display: none;
+      padding: 5vw; }
+      .content .content_center .recommend_page .search_page .hot_search, .content .content_center .recommend_page .search_page .history_search {
+        font-weight: bold;
+        font-size: 4vw; }
+      .content .content_center .recommend_page .search_page .hot_list, .content .content_center .recommend_page .search_page .history_list {
+        margin-top: 2vh;
+        display: flex;
+        flex-wrap: wrap; }
+        .content .content_center .recommend_page .search_page .hot_list .hot_item, .content .content_center .recommend_page .search_page .hot_list .history_item, .content .content_center .recommend_page .search_page .history_list .hot_item, .content .content_center .recommend_page .search_page .history_list .history_item {
+          margin-right: 2vw;
+          margin-bottom: 1.3vh;
+          padding: 1vw;
+          padding-left: 3vw;
+          padding-right: 3vw;
+          background-color: white;
+          border-radius: 10vh;
+          font-size: 1vw;
+          color: #868383; }
+    .content .content_center .recommend_page .recommend_sheet .official, .content .content_center .recommend_page .recommend_sheet .talent {
+      margin-bottom: 0vh; }
+      .content .content_center .recommend_page .recommend_sheet .official .sheet_top, .content .content_center .recommend_page .recommend_sheet .talent .sheet_top {
+        padding: 5vw;
+        display: flex;
+        justify-content: space-between; }
+        .content .content_center .recommend_page .recommend_sheet .official .sheet_top .sheet_title, .content .content_center .recommend_page .recommend_sheet .talent .sheet_top .sheet_title {
+          font-weight: bold;
+          font-size: 5vw; }
+        .content .content_center .recommend_page .recommend_sheet .official .sheet_top .more_sheet, .content .content_center .recommend_page .recommend_sheet .talent .sheet_top .more_sheet {
+          font-size: 3.5vw;
+          color: #c2c1c1; }
+      .content .content_center .recommend_page .recommend_sheet .official .sheet_box, .content .content_center .recommend_page .recommend_sheet .talent .sheet_box {
+        padding-left: 4vw;
+        display: flex;
+        overflow-x: scroll; }
+        .content .content_center .recommend_page .recommend_sheet .official .sheet_box::-webkit-scrollbar, .content .content_center .recommend_page .recommend_sheet .talent .sheet_box::-webkit-scrollbar {
+          display: none; }
+        .content .content_center .recommend_page .recommend_sheet .official .sheet_box .sheet_item, .content .content_center .recommend_page .recommend_sheet .talent .sheet_box .sheet_item {
+          position: relative;
+          width: 28vw;
+          margin-right: 2vw; }
+          .content .content_center .recommend_page .recommend_sheet .official .sheet_box .sheet_item img, .content .content_center .recommend_page .recommend_sheet .talent .sheet_box .sheet_item img {
+            width: inherit;
+            height: 28vw;
+            border-radius: 2vw; }
+          .content .content_center .recommend_page .recommend_sheet .official .sheet_box .sheet_item .sheet_numbers, .content .content_center .recommend_page .recommend_sheet .talent .sheet_box .sheet_item .sheet_numbers {
+            position: absolute;
+            left: 13vw;
+            top: 23.2vw;
+            display: inline-block;
+            padding: 0.2vw;
+            padding-left: 3vw;
+            white-space: nowrap;
+            padding-right: 3vw;
+            font-size: 1vw;
+            color: white;
+            border-radius: 10vw;
+            background-color: rgba(0, 0, 0, 0.5); }
+          .content .content_center .recommend_page .recommend_sheet .official .sheet_box .sheet_item .sheet_tiem_title, .content .content_center .recommend_page .recommend_sheet .talent .sheet_box .sheet_item .sheet_tiem_title {
+            font-size: 3.5vw;
+            font-weight: 100;
+            color: #666565;
+            text-align: center; }
+    .content .content_center .recommend_page .recommend_sheet .special {
+      margin-bottom: 0vh; }
+      .content .content_center .recommend_page .recommend_sheet .special .sheet_top {
+        padding: 5vw;
+        display: flex;
+        justify-content: space-between; }
+        .content .content_center .recommend_page .recommend_sheet .special .sheet_top .sheet_title {
+          font-weight: bold;
+          font-size: 5vw; }
+        .content .content_center .recommend_page .recommend_sheet .special .sheet_top .more_sheet {
+          font-size: 3.5vw;
+          color: #c2c1c1; }
+      .content .content_center .recommend_page .recommend_sheet .special .sheet_box {
+        display: flex;
+        overflow-x: scroll;
+        margin-left: 3vw; }
+        .content .content_center .recommend_page .recommend_sheet .special .sheet_box::-webkit-scrollbar {
+          display: none; }
+        .content .content_center .recommend_page .recommend_sheet .special .sheet_box .sheet_item {
+          margin-right: 2vw;
+          width: 60vw;
+          height: 60vw;
+          display: flex; }
+          .content .content_center .recommend_page .recommend_sheet .special .sheet_box .sheet_item .sheet_mid_box {
+            width: 60vw;
+            height: 35vw;
+            border-radius: 2vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("../../picture/song.jpg");
+            display: flex;
+            text-align: center;
+            line-height: 9vw;
+            margin-bottom: 2vw; }
+            .content .content_center .recommend_page .recommend_sheet .special .sheet_box .sheet_item .sheet_mid_box > div {
+              margin-left: 2vw;
+              margin-top: 25vw; }
+            .content .content_center .recommend_page .recommend_sheet .special .sheet_box .sheet_item .sheet_mid_box .sheet_small_picture {
+              width: 8vw;
+              height: 8vw;
+              border-radius: 10vh;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-image: url("../../picture/song.jpg"); }
+            .content .content_center .recommend_page .recommend_sheet .special .sheet_box .sheet_item .sheet_mid_box .column_name {
+              color: white;
+              margin-left: 2vw;
+              font-size: 4.5vw; }
+          .content .content_center .recommend_page .recommend_sheet .special .sheet_box .sheet_item .sheet_decoration {
+            font-size: 3.5vw;
+            font-weight: 100;
+            color: #666565;
+            text-align: center; }
+    .content .content_center .chart_page {
+      display: none;
+      position: relative;
+      top: 0;
+      left: 0; }
+      .content .content_center .chart_page .chart_list {
+        position: relative;
+        top: 0;
+        transition: height 1s;
+        background-color: white;
+        border-radius: 3vw;
+        display: flex;
+        justify-content: space-between;
+        height: 30vw;
+        margin: 5vw 4vw; }
+        .content .content_center .chart_page .chart_list .chart_list_left {
+          padding: 4vw;
+          width: 54vw; }
+          .content .content_center .chart_page .chart_list .chart_list_left .chart_title {
+            font-weight: bold;
+            font-size: 4.5vw; }
+          .content .content_center .chart_page .chart_list .chart_list_left .chart_item {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: flex; }
+            .content .content_center .chart_page .chart_list .chart_list_left .chart_item > div {
+              margin-top: 1vw;
+              font-size: 3.3vw;
+              font-weight: 100;
+              color: #b6b5b5; }
+            .content .content_center .chart_page .chart_list .chart_list_left .chart_item .chart_item_index {
+              color: black;
+              font-weight: bold; }
+            .content .content_center .chart_page .chart_list .chart_list_left .chart_item .song_name {
+              color: black; }
+        .content .content_center .chart_page .chart_list .chart_list_right {
+          position: relative;
+          height: inherit;
+          width: 30vw;
+          overflow: hidden; }
+          .content .content_center .chart_page .chart_list .chart_list_right img {
+            width: 30vw;
+            float: right;
+            height: inherit;
+            border-top-right-radius: 2vw;
+            border-bottom-right-radius: 2vw; }
+          .content .content_center .chart_page .chart_list .chart_list_right .week_update, .content .content_center .chart_page .chart_list .chart_list_right .numbers {
+            position: absolute;
+            color: white;
+            font-size: 1vw;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 0.5vw;
+            border-radius: 1vw;
+            right: 1vw; }
+          .content .content_center .chart_page .chart_list .chart_list_right .week_update {
+            top: 1vw; }
+          .content .content_center .chart_page .chart_list .chart_list_right .numbers {
+            bottom: 0vw; }
+
+.delete1 {
+  float: right;
+  display: none; }
+
+.delete2 {
+  float: right; }
+
+/*# sourceMappingURL=index.css.map */
