@@ -1,5 +1,6 @@
 import GetResource from "../../module/GetResource/index.js"
 
+
 const pervw = document.body.clientWidth / 100
 const pervh = document.body.clientHeight / 100
 const navSort = document.querySelectorAll(".nav_sort")
@@ -147,6 +148,7 @@ async function chartPageInit() {
         let startPosY
         let startTop
         let flag = 0
+        let state = "none"
         tempChartList.addEventListener("touchstart", (e) => {
             tempChartList.style.backgroundColor = "rgb(255,255,255)"
             startPosY = e.touches[0].pageY
@@ -180,13 +182,15 @@ async function chartPageInit() {
                 startPosY = e.touches[0].pageY
                 if ((parseInt(tempChartList.style.top) > 15 * pervw || parseInt(tempChartList.style.top) < -15 * pervw) && flag == 0) {
                     if (parseInt(tempChartList.style.top) >= 0) {
-
+                        state = "down"
                         chartPage.children[tempChartList.index + 1].style.top = - 34.9 * pervw + "px"
                         chartPage.children[tempChartList.index + 1].index--
+                        console.log(3)
                     } else {
-
+                        state = "up"
                         chartPage.children[tempChartList.index - 1].style.top = 34.9 * pervw + "px"
                         chartPage.children[tempChartList.index - 1].index++
+                        console.log(4)
                     }
                     flag = 1;
                 }
@@ -199,20 +203,22 @@ async function chartPageInit() {
             clearInterval(choiceColorInterval)
             flag = 0
             if (parseInt(tempChartList.style.top) > 15 * pervw || parseInt(tempChartList.style.top) < -15 * pervw) {
-                console.log(parseInt(tempChartList.style.top))
                 let temp = chartPage.removeChild(chartPage.children[tempChartList.index])
-                if (parseInt(tempChartList.style.top) > 0) {
+                if (state == "down") {
                     chartPage.insertBefore(temp, chartPage.children[tempChartList.index + 1])
                     chartPage.children[tempChartList.index + 1].style.top = ""
                     chartPage.children[tempChartList.index].style.top = ""
                     tempChartList.index++
-                } else {
+                    console.log(1)
+                } else if((state == "up")) {
                     chartPage.insertBefore(temp, chartPage.children[tempChartList.index - 1])
                     chartPage.children[tempChartList.index - 1].style.top = ""
                     chartPage.children[tempChartList.index].style.top = ""
                     tempChartList.index--
+                    console.log(2)
                 }
             }
+            state = "none"
             tempChartList.style.top = startTop
             tempChartList.style.zIndex = 0
             tempChartList.style.backgroundColor = "rgb(255,255,255)"
